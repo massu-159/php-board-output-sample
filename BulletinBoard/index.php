@@ -1,13 +1,17 @@
 <?php
 
 // データベースの接続情報
-define('DB_HOST', '127.0.0.1');
-define('DB_USER', 'root');
-define('DB_PASS', '258005aA03');
-define('DB_NAME', 'board');
+define('DB_CONNECTION', 'pgsql');
+define('DB_HOST', 'ec2-3-223-72-172.compute-1.amazonaws.com');
+define('DB_USERNAME', 'mcapyoipwvajfb');
+define('DB_PORT', '5432');
+define('DB_DATABASE', 'd59oducka9g5p0');
+define('DB_PASSWORD', 'a3435bb9478c04decbfeee822f9fe9138efd1aae7c7a097b39b1118262a64d05');
 
 // タイムゾーン設定
 date_default_timezone_set('Asia/Tokyo');
+
+define('SslMode', 'DISABLED');
 
 // 変数の初期化
 $now_date = null;
@@ -42,7 +46,7 @@ if (!empty($_POST['btn_submit'])) {
   if (empty($error_message)) {
 
     // データベースに接続
-    $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+    $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 
     // 接続エラーの確認
     if ($mysqli->connect_errno) {
@@ -76,7 +80,7 @@ if (!empty($_POST['btn_submit'])) {
 }
 
 // データベースに接続
-$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+$mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 
 // 接続エラーの確認
 if ($mysqli->connect_errno) {
