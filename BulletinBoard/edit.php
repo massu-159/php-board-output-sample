@@ -1,7 +1,7 @@
 <?php
 
 // データベースの接続情報
-define('DB_CONNECTION', 'pgsql');
+define('DB_CONNECTION', 'psql');
 define('DB_HOST', 'ec2-3-223-72-172.compute-1.amazonaws.com');
 define('DB_USERNAME', 'mcapyoipwvajfb');
 define('DB_PORT', '5432');
