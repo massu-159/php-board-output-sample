@@ -1,14 +1,14 @@
 <?php
 // 管理ページのログインパスワード
-define('PASSWORD', 'adminPassword');
+define('PASSWORD', $_ENV['ADMIN_PASSWORD']);
 
 //データベースの接続情報
-define('DB_CONNECTION', 'psql');
-define('DB_HOST', 'ec2-3-223-72-172.compute-1.amazonaws.com');
-define('DB_USERNAME', 'mcapyoipwvajfb');
-define('DB_PORT', '5432');
-define('DB_DATABASE', 'd59oducka9g5p0');
-define('DB_PASSWORD', 'a3435bb9478c04decbfeee822f9fe9138efd1aae7c7a097b39b1118262a64d05');
+define('DB_CONNECTION', $_ENV['DB']);
+define('DB_HOST', $_ENV['HOSTNAME_AWS']);
+define('DB_USERNAME', $_ENV['USERNAME']);
+define('DB_PORT', $_ENV['POAT']);
+define('DB_DATABASE', $_ENV['DB_DATABASE']);
+define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
 
 // タイムゾーン設定
 date_default_timezone_set('Asia/Tokyo');
