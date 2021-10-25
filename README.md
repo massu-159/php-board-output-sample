@@ -7,7 +7,7 @@ DBはMySQLを使って記事データ保存。
 
 セッションを使った認証機能を実装。
 
-AWSのEC2を使って仮装サーバー構築。
+AWSのEC2を使って仮装サーバー構築&デプロイ。
 
 urlはこちら
 https://github.com/massu-159/php-outputーsample/
