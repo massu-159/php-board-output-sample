@@ -1,4 +1,4 @@
-# php-output-sample
+# php-board-output-sample
 PHPを使ったログイン機能のある掲示板サンプル
 
 基礎学習のためフレームワークを使わず、作成。
@@ -10,7 +10,7 @@ DBはMySQLを使って記事データ保存。
 AWSのEC2を使って仮装サーバー構築&デプロイ。
 
 urlはこちら
-https://github.com/massu-159/php-outputーsample/
+https://github.com/massu-159/php-board-outputーsample/
 
 ## アプリケーションの仕様
 
